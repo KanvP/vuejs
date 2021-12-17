@@ -2,15 +2,15 @@
   <h1>ຍິນດີຕ້ອນຮັບສູ່ການຂຽນເວັບ Vue JS</h1>
   <section>
     <h3>ຊື່ ແລະ ນາມສະກຸນ : {{ firtname }} {{ lastname }}</h3>
-    <h3>ຊື່ ແລະ ນາມສະກຸນ : {{ getFullname() }}</h3>
     <h3>ອາຍຸ : {{ age }} ປີ</h3>
+    <h3>ຊື່ ແລະ ນາມສະກຸນ : {{ getFullname() }}</h3>
     <span v-html="address"></span>
-    <img v-bind:src="picture" alt="">
+    <img v-bind:src="picture" alt="" />
   </section>
 </template>
 
 <script>
-import image from './assets/logo.png'
+import image from "./assets/logo.png";
 export default {
   name: "App",
   data() {
@@ -19,7 +19,7 @@ export default {
       lastname: "ຫລໍ່ບຸນທຳ",
       age: 20,
       address: "<address>ທີ່ຢູ່ : ແຂວງອຸດົມໄຊ</address>",
-      picture:image
+      picture: image,
     };
   },
   methods: {
