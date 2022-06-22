@@ -1,11 +1,11 @@
 <template>
+  <img v-bind:src="picture" alt="" />
   <h1>ຍິນດີຕ້ອນຮັບສູ່ການຂຽນເວັບ Vue JS</h1>
   <section>
     <h3>ຊື່ ແລະ ນາມສະກຸນ : {{ firtname }} {{ lastname }}</h3>
     <h3>ອາຍຸ : {{ age }} ປີ</h3>
     <h3>ຊື່ ແລະ ນາມສະກຸນ : {{ getFullname() }}</h3>
-    <span v-html="address"></span>
-    <img v-bind:src="picture" alt="" />
+    <h3>ທີ່ຢູ່ : <span v-html="address"></span></h3>
   </section>
 </template>
 
@@ -18,7 +18,7 @@ export default {
       firtname: "ແກ່ນຈັນ",
       lastname: "ຫລໍ່ບຸນທຳ",
       age: 20,
-      address: "<address>ທີ່ຢູ່ : ແຂວງອຸດົມໄຊ</address>",
+      address: "<strong>ແຂວງອຸດົມໄຊ</strong>",
       picture: image,
     };
   },
@@ -34,7 +34,7 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, noto sans lao, Helvetica, Arial, sans-serif;
+  font-family: Avenir, NotoSansLao, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
